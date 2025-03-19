@@ -1,35 +1,43 @@
-import { useState } from 'react'
+// import { useState } from 'react'
+import React from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  // return (
+  //     <div className='coming-soon'>
+  //       <h1>CTD Swag</h1>
+  //       <div style={{height: 100, width: 100}}>
+  //         <img src={reactLogo} alt="react logo" />
+  //       </div>
+  //       <h2>Coming Soon...</h2>
+  //     </div>
+  // )
+  
+  return React.createElement(
+    'div',
+    {
+      className: 'coming-soon',
+    },
+    React.createElement('h1', null, 'CTD Swag'),
+    React.createElement(
+      'div',
+      {
+        style: {
+          height: 100,
+          width: 100,
+        },
+      },
+      React.createElement('img', {
+        src: reactLogo,
+        alt: 'Code The Dream Logo',
+      }),
+    ),
+    React.createElement('h2', null, 'Coming Soon...'),
+  );
 }
 
 export default App
