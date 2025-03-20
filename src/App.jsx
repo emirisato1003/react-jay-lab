@@ -1,19 +1,23 @@
-// import { useState } from 'react'
 import React from 'react'
-import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg'
+import Name from './components/Name'
+import Position from './components/Position'
 import './App.css'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
-      <div className='coming-soon'>
-        <h1>CTD Swag</h1>
-        <div style={{height: 100, width: 100}}>
-          <img src={reactLogo} alt="react logo" />
-        </div>
-        <h2>Coming Soon...</h2>
+      // <div className='coming-soon'>
+      //   <h1>CTD Swag</h1>
+      //   <div style={{height: 100, width: 100}}>
+      //     <img src={reactLogo} alt="react logo" />
+      //   </div>
+      //   <h2>Coming Soon...</h2>
+      // </div>
+      <div>
+        <Name />
+        <Position />
       </div>
   )
 
