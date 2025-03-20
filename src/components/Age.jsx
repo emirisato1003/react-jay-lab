@@ -1,6 +1,6 @@
 import React from "react"
 
-function Age(){
+export const Age = function(){
     return(
         <div>
             <h1>Age</h1>
@@ -8,5 +8,3 @@ function Age(){
         </div>
     )
 }
-
-export default Age
