@@ -19,7 +19,7 @@ function App() {
       <div>
         <Name />
         <Position />
-        <Age/>
+        <Age title="age"/>
       </div>
   )
 
