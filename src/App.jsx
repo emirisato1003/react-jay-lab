@@ -2,6 +2,7 @@ import React from 'react'
 // import reactLogo from './assets/react.svg'
 import Name from './components/Name'
 import Position from './components/Position'
+import Age from './components/Age'
 import './App.css'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <div>
         <Name />
         <Position />
+        <Age/>
       </div>
   )
 
