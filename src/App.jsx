@@ -1,23 +1,16 @@
 import React from 'react'
-import {articles} from './data'
+import ArticleList from './components/ArticleList'
+import Header from './components/Header'
+import Footer from './components/Footer'
 import './App.css'
 
 function App() {  
   return (
-      <main>
-      <div>
-        {articles.map((article) => (
-          <>
-          <h1>{article.title}</h1>
-          <span>{article.author} | {article.publicationDate}</span>
-          <img src={article.imgUrl} />
-          <p>{article.body}</p>
-          <hr />
-          </>
-        ))}
-      </div>
-      <h2>Second element</h2>
-      </main>
+      <>
+      <Header />
+      <ArticleList />
+      <Footer />
+      </>
   )
 }
 
