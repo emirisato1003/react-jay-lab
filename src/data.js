@@ -40,6 +40,5 @@ export const articles = [
       tags: ["React", "Performance", "Optimization"]
     }
   ];
-  
   export default articles;
   
